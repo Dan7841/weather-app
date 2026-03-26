@@ -12,6 +12,7 @@ let currentTemp = null
 let isCelsius = true
 let feelTemp = null
 const tempToggleBtn = document.querySelector(".temperature-toggle")
+const API_KEY = import.meta.env.VITE_API_KEY
 
 searchBtn.addEventListener("click", handleSearch)
 
