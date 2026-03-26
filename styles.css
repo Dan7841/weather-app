@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1a1a2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app-container {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    color: #fff;
+    margin: 0 auto;
+    border-radius: 24px;
+    padding: 40px 35px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    transition: background 0.8s ease;
+}
+
+.app-container[data-weather="clear"] {
+    background: linear-gradient(135deg, #f7971e, #ffd200);
+    color: #fff;
+}
+
+.app-container[data-weather="clouds"] {
+    background: linear-gradient(135deg, #757f9a, #d7dde8);
+    color: #fff;
+}
+
+.app-container[data-weather="rain"] {
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+}
+
+.app-container[data-weather="drizzle"] {
+    background: linear-gradient(135deg, #89a4c7, #3b5998);
+}
+
+.app-container[data-weather="storm"] {
+    background: linear-gradient(135deg, #0f0c29, #302b63);
+}
+
+.app-container[data-weather="snow"] {
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    color: #333;
+}
+
+.app-container[data-weather="mist"] {
+    background: linear-gradient(135deg, #606c88, #3f4c6b);
+}
+
+.search-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-container input {
+    border: 0;
+    outline: 0;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    padding: 10px 20px;
+    height: 50px;
+    border-radius: 30px;
+    flex: 1;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.search-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-container input:focus {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2)
+}
+
+.search-container button {
+    border: 0;
+    outline: 0;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.2s;
+    flex-shrink: 0;
+}
+
+.search-container button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.search-container button img {
+    width: 16px;
+}
+
+.temperature-toggle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff !important;
+    white-space: nowrap;
+    padding: 0 16px !important;
+    border-radius: 30px !important;
+    width: auto !important;
+}
+
+.weather-icon {
+    width: 120px;
+    margin-top: 30px;
+    filter: drop-shadow(0 4px 15px rgba(0,0,0,0.2));
+}
+
+.weather-container h1 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+.weather-container h2 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.weather-details-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 16px 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.column img {
+    width: 32px;
+    margin-bottom: 6px;
+    opacity: 0.9;
+}
+
+.column p:first-of-type {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.column p:last-of-type {
+    font-size: 12px;
+    opacity: 0.8;
+    margin-top: 2px;
+}
+
+.feels-like-icon {
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.forecast-card {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.forecast-card .day {
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.forecast-card img {
+    width: 36px;
+}
+
+.forecast-card .forecast-temp {
+    font-size: 14px;
+    font-weight: 600;
+}

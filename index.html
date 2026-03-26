@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="config.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <div class="search-container">
+            <input id="search-input" type="text" placeholder="Enter City Name" spellcheck="false">
+            <button id="search-btn"><img src="images/search.png"></button>
+            <button class="temperature-toggle">°F</button>
+        </div>
+        <div class="weather-container">
+            <img src="images/clouds.png" class="weather-icon">
+            <h1 class="temperature">14°C</h1>
+            <h2 class="city-name">Winchester</h2>
+            <h3 class="weather-description">Cloudy</h3>
+        </div>
+        <div class="weather-details-container">
+            <div class="column">
+                <img class="feels-like-icon" src="images/feels_like.png">
+                <p class="feels-like-temp">10°C</p>
+                <p>Feels Like</p>
+            </div>
+            <div class="column">
+                <img class="humidity-icon" src="images/humidity.png">
+                <p class="humidity">45%</p>
+                <p>Humidity</p>
+            </div>
+            <div class="column">
+                <img class="wind-icon" src="images/wind.png">
+                <p class="wind-speed">12 km/h</p>
+                <p>Wind Speed</p>
+            </div>
+        </div>
+        <div class="forecast"></div>
+    </div>
+    
+</body>
+</html>
