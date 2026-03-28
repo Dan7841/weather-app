@@ -15,3 +15,4 @@ A weather app that lets you search any city and view current weather conditions.
 
 ## Live Demo
 [View here](https://dan-peters-weather-app.netlify.app)
+
